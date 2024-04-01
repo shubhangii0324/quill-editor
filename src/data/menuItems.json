@@ -1,0 +1,24 @@
+{
+    "menuItems": [
+        {
+            "key": 1,
+            "label": "AI Audit"
+        },
+        {
+            "key": 2,
+            "label": "Manual Audit"
+        },
+        {
+            "key": 3,
+            "label": "RedTeam"
+        },
+        {
+            "key": 4,
+            "label": "Monitor"
+        },
+        {
+            "key": 5,
+            "label": "Incident Response"
+        }
+    ]
+}

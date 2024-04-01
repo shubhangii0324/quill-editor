@@ -3,31 +3,68 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --background: #0D0F11;
+  --dark_gray: #191D23;
+  --light_gray: #7B8191;
+  --gray: #5D677D;
+  --blue: #007AFF;
+  --bg_light_blue:  #007AFF14;
+  --light_blue: #007AFF29;
+  --border_color: #FFFFFF14;
+  --orange: #FF6F50;
+  --content_background: #13161A;
+  --text_gray: #CCCCCC;
+  --status_blue: #5481FE;
+  --status_orange: #FF4D4D;
+  --status_yellow: #FFD166;
+  --status_green: #06D6A0;
+  --status_purple: #E568FF;
+  --status_torquoise: #66E3F4;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background);
+  overflow: hidden;
+  overflow-y: scroll;
+  fill: currentColor;
+  max-height: 100vh;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #586F92;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #25477A; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3586f7; 
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hidden {
+-ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.fancy-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.fancy-scrollbar::-webkit-scrollbar-track {
+  background: #90A0B7; 
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb {
+  background: #25477A; 
 }
